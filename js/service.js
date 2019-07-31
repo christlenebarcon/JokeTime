@@ -3,7 +3,8 @@ var JOKE_SERVICE = {
     get: function(){
             return $.ajax({
                 type: 'get',
-                url: JOKES_API
+                url: JOKES_API,
+                async: false,
             });
         },
     answer: function(){
